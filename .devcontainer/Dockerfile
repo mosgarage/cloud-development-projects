@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1.4
-# Universal Dev Container - Base for all projects
+# Cloud Dev Container - Base for all projects
 FROM ubuntu:22.04 AS base
 
 # Build arguments for customization
-ARG TIMEZONE=UTC
+ARG TIMEZONE=Europe/London
 ARG LOCALE=en_US.UTF-8
 ARG USERNAME=developer
 ARG USER_UID=1000
@@ -168,6 +168,6 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD command -v git && command -v zsh || exit 1
 
 # Labels for metadata
-LABEL maintainer="Your Name"
+LABEL maintainer="Moses Fabiyi"
 LABEL version="1.0.0"
-LABEL description="Universal Development Container"
+LABEL description="Cloud Development Containers"

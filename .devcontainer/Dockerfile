@@ -11,7 +11,7 @@ ARG USER_GID=$USER_UID
 
 # Prevent interactive prompts during apt install
 ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=$TIMEZONE
+ENV TZ=Europe/London
 
 # Set locale
 ENV LANG=$LOCALE
